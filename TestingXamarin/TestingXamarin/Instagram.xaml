@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestingXamarin.Instagram">
+    <ContentPage.Content>
+            <StackLayout>
+                <Label Text="username"></Label>
+                <Image Source="http://lorempixel.com/1920/1080/nature/3/" HorizontalOptions="Fill"></Image>
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Like"></Button>
+                    <Button Text="Comment"></Button>
+                    <Button Text="Share"></Button>
+                </StackLayout>
+                <BoxView Color="#f0f0f0" HeightRequest="1"></BoxView>
+                <Label Text="700 Likes" FontAttributes="Bold"></Label>
+                <Label Text="Some text..."></Label>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

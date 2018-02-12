@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestingXamarin.StackPage"
+             Padding="0,20,0,0">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Yellow"
+                     Spacing="20"
+                     Padding="40">
+            <StackLayout>
+                <Label Text="Label 1" BackgroundColor="Silver"></Label>
+            </StackLayout>
+            <Label Text="Label 2"></Label>
+            <Label Text="Label 3"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
