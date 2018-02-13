@@ -75,11 +75,11 @@ namespace TestingXamarin
 				}
 			};
 
-		    if (string.IsNullOrWhiteSpace(searchText)) { return contactGroups; }
+			if (string.IsNullOrWhiteSpace(searchText)) { return contactGroups; }
 
-		    var contacts = contactGroups.Where(x => x.Title == searchText.Substring(0, 1));
+			var contacts = contactGroups.Where(x => x.Title == searchText.Substring(0, 1));
 
-            return (ObservableCollection<ContactGroup>) contacts;
+			return new ObservableCollection<ContactGroup>(contacts);
 		}
 
 

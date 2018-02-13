@@ -61,12 +61,20 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NavigationPage.xaml.cs">
+      <DependentUpon>NavigationPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)RoundImage.xaml.cs">
       <DependentUpon>RoundImage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -138,6 +146,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ListDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)WelcomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)NavigationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
